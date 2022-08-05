@@ -129,16 +129,18 @@ aside {
 @media screen and (max-width: 940px) {
   .container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow: scroll;
   }
 
   main {
+    order: 2;
     width: 100%;
     min-height: 100vh;
   }
 
   aside {
+    order: 1;
     width: 100%;
     min-height: 100vh;
   }
