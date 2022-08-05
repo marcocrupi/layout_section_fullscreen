@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(20, 20, 23);
+}
+
+section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+main section p {
+  color: white;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.hp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonG {
+  margin-top: 5rem;
+  background-color: rgb(191, 255, 191);
+  height: 3rem;
+  width: 12rem;
+  border-radius: 30px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(168, 210, 252);
+}
+
+.navAside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navAside div {
+  margin: 1rem;
+}
+
+.circle {
+  margin: 1rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: orange;
+  border-radius: 50px;
+}
+
+.blockInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.blockInput h1 {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.whiteInput {
+  background-color: white;
+  margin: 1rem 0;
+  height: 3rem;
+  width: 90%;
+}
+
+.greenButtonR {
+  background-color: rgb(191, 255, 191);
+  margin: 1rem 0;
+  height: 3rem;
+  width: 90%;
+}
+
+@media screen and (max-width: 1257px) {
+  .blockInput h1 {
+    font-size: 1.8rem;
+  }
+
+  main section h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  aside {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
